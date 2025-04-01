@@ -43,18 +43,19 @@
             label1.BackColor = Color.FromArgb(128, 128, 255);
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Snow;
-            label1.Location = new Point(463, 39);
+            label1.Location = new Point(529, 52);
             label1.Name = "label1";
-            label1.Size = new Size(262, 45);
+            label1.Size = new Size(142, 54);
             label1.TabIndex = 0;
-            label1.Text = "INICIAR SECIÓN";
+            label1.Text = "Marco";
             label1.Click += label1_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Location = new Point(-2, 0);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(400, 338);
+            pictureBox1.Size = new Size(457, 451);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -64,49 +65,54 @@
             label2.AutoSize = true;
             label2.BackColor = SystemColors.ButtonFace;
             label2.Font = new Font("Nirmala Text", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(463, 146);
+            label2.Location = new Point(529, 195);
             label2.Name = "label2";
-            label2.Size = new Size(64, 21);
+            label2.Size = new Size(79, 28);
             label2.TabIndex = 2;
             label2.Text = "Usuario";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.BackColor = SystemColors.ButtonFace;
             label3.Font = new Font("Nirmala Text", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(463, 198);
+            label3.Location = new Point(529, 264);
             label3.Name = "label3";
-            label3.Size = new Size(89, 21);
+            label3.Size = new Size(110, 28);
             label3.TabIndex = 3;
             label3.Text = "Contraseña";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(625, 144);
+            textBox1.Location = new Point(714, 192);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(114, 27);
             textBox1.TabIndex = 4;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(625, 196);
+            textBox2.Location = new Point(714, 261);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
+            textBox2.Size = new Size(114, 27);
             textBox2.TabIndex = 5;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(790, 338);
+            ClientSize = new Size(903, 451);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Ingresar al sistema";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
